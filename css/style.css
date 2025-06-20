@@ -101,7 +101,8 @@ main .back-to-top-btn {
 main .back-to-top-btn a {
   background-color: black;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  padding: 0.8rem;
 }
 @media (max-width: 400px) {
   main {
