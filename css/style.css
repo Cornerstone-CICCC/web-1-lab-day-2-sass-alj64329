@@ -1,0 +1,153 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77px;
+  display: flex;
+  padding-top: 0.2rem;
+  font-size: 1.43rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: yellow;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  list-style: none;
+  padding: 1rem 0 0 0;
+  margin: 0;
+  gap: 0.9rem;
+}
+@media (max-width: 400px) {
+  header {
+    height: 65px;
+    font-size: 16px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  header nav ul {
+    gap: 0.6rem;
+  }
+}
+
+main {
+  padding-top: 80px;
+  font-size: 1.3rem;
+}
+main h1 {
+  display: flex;
+  align-items: center;
+}
+main h2 {
+  font-size: 1.95rem;
+  position: sticky;
+  justify-content: center;
+  top: 80px;
+  width: 100%;
+  height: 100;
+  z-index: 9;
+  background-color: cyan;
+}
+main .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .gallery img {
+  width: 100%;
+  height: auto;
+}
+main .fruit-hover {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .fruit-hover h2, main .fruit-hover p {
+  grid-column: 1/-1;
+  margin: 0 0 0.5rem 0;
+}
+main .fruit-hover p {
+  padding: 0.5rem 0 0.5rem 0;
+}
+main .fruit-hover figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+main .fruit-hover figure img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+main .fruit-hover figure figcaption {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  background-color: red;
+  color: white;
+  position: absolute;
+}
+main .fruit-hover figure:hover figcaption {
+  max-height: 100px;
+  opacity: 1;
+}
+main .back-to-top-btn {
+  display: flex;
+  justify-content: end;
+  position: sticky;
+  bottom: 1rem;
+}
+main .back-to-top-btn a {
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+}
+@media (max-width: 400px) {
+  main {
+    font-size: 1.17rem;
+    padding-top: 45px;
+  }
+  main h1 {
+    font-size: 1.69rem;
+    display: flex;
+    align-items: center;
+  }
+  main h2 {
+    font-size: 1.56rem;
+    top: 80px;
+    height: auto;
+  }
+  main .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main .fruit-hover {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main .fruit-hover h2,
+  main .fruit-hover p {
+    grid-column: 1/-1;
+  }
+  main .back-to-top-btn {
+    display: flex;
+    justify-content: start;
+    position: sticky;
+    bottom: 0.9rem;
+  }
+  main .back-to-top-btn a {
+    background-color: black;
+    color: white;
+    font-size: 0.78rem;
+  }
+}
+
+footer p {
+  font-size: 1.3rem;
+}
+@media (max-width: 400px) {
+  footer p {
+    font-size: 1.04rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

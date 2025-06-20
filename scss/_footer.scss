@@ -1,0 +1,9 @@
+@use './variables';
+
+footer p{
+    font-size: variables.$fontSize;
+    
+   @media (max-width: 400px) {
+      font-size: variables.$fontSize*0.8;
+  }
+}
